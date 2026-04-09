@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+/* Container */
+.datepicker {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+/* Input */
+.datepicker input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin: 15px 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Calendar */
+.calendar {
+  background: #0f172a;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header span {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Days */
+.days, .dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.days div {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+/* Dates */
+.dates span {
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dates span:hover {
+  background: #334155;
+}
+
+.active {
+  background: #38bdf8;
+  color: #000;
+  font-weight: bold;
+}
+
+.fade {
+  opacity: 0.3;
+}
